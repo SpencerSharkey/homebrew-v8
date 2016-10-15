@@ -33,4 +33,5 @@ deploy:
   skip_cleanup: true
   on:
     repo: dflemstr/homebrew-v8
+    tags: true
   overwrite: true
