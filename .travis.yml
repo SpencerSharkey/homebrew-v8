@@ -23,7 +23,7 @@ install:
 
 script:
   - brew install --verbose --build-bottle v8.rb
-  - brew bottle v8
+  - brew bottle v8.rb
 
 deploy:
   provider: releases
