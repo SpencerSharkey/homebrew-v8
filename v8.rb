@@ -9,7 +9,8 @@ class V8 < Formula
   head "https://github.com/v8/v8.git"
 
   bottle do
-    cellar :any
+    root_url "https://github.com/dflemstr/homebrew-v8/releases/download/v5.4.420/"
+    sha256 "fc165ebb19bf48be44cf5c45b0790e2d0855a2fe55ebaaba4f5e6bc01e06281f" => :el_capitan
   end
 
   option "with-readline", "Use readline instead of libedit"
