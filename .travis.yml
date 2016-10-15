@@ -22,8 +22,9 @@ install:
   - if [ "$CXX" = "g++" ]; then export CXX="g++-4.8" CC="gcc-4.8"; fi
 
 script:
-  - brew install --verbose --build-bottle v8.rb
-  - brew bottle v8.rb
+  - brew tap dflemstr/v8
+  - brew install --verbose --build-bottle dflemstr/v8/v8
+  - brew bottle dflemstr/v8/v8
 
 deploy:
   provider: releases
